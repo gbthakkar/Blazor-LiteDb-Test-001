@@ -1,5 +1,6 @@
 using BlazorLiteDb001.Data;
 using BlazorLiteDb001.Model;
+using BlazorLiteDb001.Services;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 
@@ -10,6 +11,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddSingleton<ILiteDbContext, LiteDbContext>();
+builder.Services.AddTransient<ILiteDbWeatherForecastService, LiteDbWeatherForecastService>();
 
 var app = builder.Build();
 

@@ -5,6 +5,7 @@
         public class Tables
         {
             public const string Services = "Services";
+            public const string WeatherForecast = "WeatherForecast";
         }
     }
 }

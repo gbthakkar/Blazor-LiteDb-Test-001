@@ -2,6 +2,7 @@ namespace BlazorLiteDb001.Data
 {
     public class WeatherForecast
     {
+        public int Id { get; set; }//New addition, Id wasn't there 
         public DateTime Date { get; set; }
 
         public int TemperatureC { get; set; }
